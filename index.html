@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adithya Sagri - Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Adithya Sagri
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="Email Icon"/>
+            adithya.sagri24@gmail.com
+          </div>
+
+          <div style="clear:both;"></div>
+
+          <div class="contact_info">
+            <img src="html_finalprojimages/phone.png" alt="Phone Icon"/>
+            +1 234 567 8901
+          </div>
+        </div>
+
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Project Details</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/profile.png" alt="Adithya Sagri Profile Picture" class="profile_image"/>
+      </div>
+
+      <div>
+        <h1>
+          Hi, I'm Adithya Sagri! <img src="html_finalprojimages/waving-hand.png" alt="Waving Hand" width="60px"/>
+        </h1>
+        <p>
+          I am a passionate Full Stack Developer with 2+ years of experience in designing and developing responsive, user-friendly web applications and cloud architectures. I have worked extensively with modern JavaScript frameworks, RESTful APIs, and IBM Cloud microservices. Driven by clean architecture, performance optimization, and creating seamless digital experiences.
+        </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png" alt="HTML5"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg" alt="JavaScript"/>
+          <h6>JavaScript</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <!-- Added 3 new skills to show all 5 with logos and formatting -->
+        <div class="skill">
+          <img src="html_finalprojimages/react.png" alt="React"/>
+          <h6>React</h6>
+          <p>1.5 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/node.png" alt="Node.js"/>
+          <h6>Node.js</h6>
+          <p>1.5 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png" alt="CSS3"/>
+          <h6>CSS</h6>
+          <p>2 years experience</p>
+        </div>  
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div style="clear:both;"></div>
+
+      <div id="projects-container" class="projects-container">
+        <div class="project-card">
+          <h3>Autonomous AI Code Reviewer</h3>
+          <ul>
+            <li>Developed an intelligent automated code analysis system that scans source repositories for security vulnerabilities, enforces style consistency, and generates real-time performance refactoring recommendations using Python, modern JavaScript APIs, and cloud microservices.</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+          <h3>Cloud-Based Healthcare Monitoring Dashboard</h3>
+          <ul>
+            <li>Engineered a responsive medical telemetry portal enabling healthcare practitioners to monitor live patient vital signals, receive automated triage alerts, and track historical diagnostics securely through role-based access control and encrypted web sockets.</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+          <h3>Smart Multi-Vendor Marketplace</h3>
+          <ul>
+            <li>Architected and implemented a high-performance e-commerce platform supporting multi-tenant vendor storefronts, real-time inventory synchronization, dynamic pricing algorithms, and integrated secure payment processing with modern responsive design.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Adithya is an exceptional full stack engineer whose problem-solving capability and dedication to software craftsmanship stand out in every sprint. He consistently delivers clean, high-performance code on schedule and thrives in collaborative team environments.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working alongside Adithya was an absolute delight. His deep understanding of modern web architectures, coupled with an eye for responsive user experience, helped us accelerate our deployment lifecycle significantly. Highly recommended!
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Adithya demonstrates remarkable technical insight and leadership. He introduced scalable architectural patterns that reduced page load times by over 40% while proactively mentoring peers and fostering a culture of excellence.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Home Icon -->
+    <div class="iconbutton">
+      <a href="#home">
+        <img src="html_finalprojimages/home.png" alt="Home" class="home-icon"/>
+      </a>
+    </div>
+
+    <!-- Recommendation Pop-up -->
+    <div class="popup" id="popup">
+      <img src="html_finalprojimages/checkmark--outline.svg" alt="Submitted Icon"/>
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
+

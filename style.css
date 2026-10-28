@@ -1,0 +1,356 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation Bar */
+#home {
+  background-color: #7600bc;
+  margin-left: -1cm;
+  margin-right: -1cm;
+  margin-top: -1cm;
+  padding-top: 2cm;
+  padding-bottom: 2cm;
+  height: 5mm;
+}
+
+.topmenu {
+  color: lightgray;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Nav links hover: bold and underlined */
+.topmenu:hover {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.topdiv {
+  float: right;
+  padding-right: 1cm;
+}
+
+/* Styled Name in Profile Section */
+.profile_name {
+  float: left;
+  padding-left: 2cm;
+  margin-top: -1rem;
+  color: #ffffff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.profile_name .contact_info {
+  font-size: 15px;
+  font-style: italic;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 4px;
+}
+
+.contact_info img {
+  width: 20px;
+  margin-right: 10px;
+  float: left;
+}
+
+/* Titles */
+h2 {
+  font-size: 50px;
+  text-align: center;
+  float: left;
+  color: #7600bc;
+  margin: 30px 30px 0 60px;
+}
+
+.introduction {
+  font-size: 30px;
+  text-align: center;
+  float: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* About Me section */
+.container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 40px;
+}
+
+#about-me h1 {
+  font-size: 55px;
+  margin-top: 40px;
+  color: #7600bc;
+}
+
+#about-me p {
+  font-size: 22px;
+  line-height: 1.6;
+  color: rgb(100, 100, 100);
+}
+
+.profile_image {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #7600bc;
+  box-shadow: 0 4px 15px rgba(118, 0, 188, 0.3);
+  margin: 30px 40px 20px 20px;
+}
+
+/* Skills */
+.all_skills {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  padding: 20px 50px;
+}
+
+.skill {
+  border: 1px solid gray;
+  border-radius: 6px;
+  text-align: center;
+  margin: 20px;
+  padding: 15px 10px;
+  width: 1.8in;
+  font-size: 20px;
+  box-shadow: 0 3px 10px gray;
+  background-color: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.skill:hover {
+  transform: translateY(-5px);
+}
+
+.skill img {
+  height: 3.5rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.skill h6 {
+  font-size: 20px;
+  margin-block-start: 8px;
+  margin-block-end: 5px;
+  font-weight: bold;
+  color: #333;
+} 
+
+.skill p {
+  font-size: 15px;
+  color: gray;
+  margin-block-start: 5px;
+  margin-block-end: 5px;
+} 
+
+.flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Projects */
+.projects-container {
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.projects-container hr {
+  border: 1px solid lightgray;
+  width: 80%;
+  margin-left: 3cm;
+}
+
+.project-card {
+  margin: 0 15px 15px 30px;
+  padding-bottom: 5px;
+}
+
+.project-card h3 {
+  font-size: 25px;
+  margin-left: 30px;
+  color: #333;
+}
+
+.project-card li {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-left: 30px;
+  color: #555;
+}
+
+/* Recommendations */
+.all_recommendations {
+  display: flex;
+  align-items: stretch;
+  margin-left: 50px;
+  flex-direction: row;
+  flex-flow: wrap;
+  padding: 20px;
+}
+
+.recommendation {
+  font-style: italic;
+  text-align: left;
+  width: 20rem;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  margin: 15px;
+  border: 1px solid gray;
+  font-size: 16px;
+  line-height: 1.4;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recommendation span {
+  color: #7600bc;
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+/* Scroll to Top Home Button */
+.iconbutton {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #7600bc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.iconbutton a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+.home-icon {
+  width: 26px;
+  height: 26px;
+  filter: brightness(0) invert(1);
+}
+
+/* Form Pop-up Modal */
+.popup {
+  width: 420px;
+  background-color: #f7e6fa;
+  border: 2px solid #7600bc;
+  border-radius: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  position: fixed;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  visibility: hidden;
+  z-index: 2000;
+}
+
+.popup img {
+  padding-top: 10px;
+  width: 45px;
+  height: 45px;
+}
+
+.popup h3 {
+  color: #333;
+  margin: 15px 0;
+  font-size: 20px;
+}
+
+.popup button {
+  background-color: #7600bc;
+  border: 1px solid #7600bc;
+  color: #fff;
+  display: inline-block;
+  border-radius: 6px;
+  text-align: center;
+  padding: 10px 24px;
+  width: 120px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 10px auto;
+  transition: background-color 0.2s ease;
+}
+
+.popup button:hover {
+  background-color: #550085;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Recommendation Form */
+input, textarea {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  margin: 10px 0;  
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+fieldset {
+  padding: 25px 35px; 
+  margin-left: 50px; 
+  margin-right: 50px;   
+  border: 2px solid #7600bc;
+  border-radius: 8px;
+  width: 60%;
+  background-color: #faf8fd;
+}
+
+/* Form Submit Button */
+#recommend_btn {
+  background-color: #fff;
+  border: 2px solid #7600bc;
+  color: #7600bc;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#recommend_btn:hover {
+  background-color: #7600bc;
+  color: #ffffff;
+}
+
